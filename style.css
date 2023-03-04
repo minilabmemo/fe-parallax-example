@@ -1,0 +1,289 @@
+:root {
+  --main-bg-color: #fffffd;
+  --purp: #5528ff;
+  --headline-color: #ffffff;
+  --about-color: #fcfcfc;
+  --border-it: 1px solid rgb(255, 255, 255);
+  --font-var: "Apple LiGothic", "Ubuntu", sans-serif;
+}
+
+
+body {
+  font-family: var(--font-var);
+  background: var(--main-bg-color);
+
+}
+
+
+
+nav,
+footer {
+  padding: 1.5rem;
+  color: var(--headline-color);
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+#logo-title {
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+#nav-items {
+  margin-left: auto;
+  font-size: 12px;
+}
+
+#nav-items a {
+  padding: 1px 20px 1px 20px;
+}
+
+#social-media {
+  margin-left: auto;
+  margin-right: 120px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+}
+
+.full-page-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.bg-img {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./src/img/2_back.png);
+  /* background-color: red; */
+  transform: scale(1);
+  animation-name: slidein;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  background-repeat: round;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+.scoll_down {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  background-image: url(./src/img/scroll_down.svg);
+}
+
+nav {
+  position: absolute;
+  top: 1px
+}
+
+main {
+  position: absolute;
+  top: 10%
+}
+
+@keyframes slidein {
+  from {
+    transform: scale(2);
+    /* height: 150vh;
+    width: 150%; */
+  }
+
+  to {
+    transform: scale(1);
+    /* height: 100vh;
+    width: 100%; */
+  }
+}
+
+main {
+  margin: 0 auto;
+  width: 80%;
+
+}
+
+#headline {
+  margin: 0 auto;
+  color: var(--about-color);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  position: absolute;
+  top: 20vh;
+  left: 15vw;
+
+}
+
+
+
+#about {
+  margin: 0 auto;
+  color: var(--about-color);
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.9;
+  width: 50%;
+  line-height: 34px;
+  padding-bottom: 1em;
+  position: absolute;
+  top: 35vh;
+  left: 15vw;
+}
+
+.purple-button {
+  background: var(--purp);
+  color: var(--main-bg-color);
+  font-family: var(--font-var);
+  font-size: 1rem;
+  font-weight: 300;
+  border-radius: 10px;
+  height: 3rem;
+  width: 11rem;
+}
+
+.purple-button:hover {
+  background-color: black;
+}
+
+.purple-button--small {
+  background: var(--purp);
+  color: var(--main-bg-color);
+  font-family: var(--font-var);
+  border-radius: 5px;
+  height: 3rem;
+  width: 11rem;
+}
+
+.page-div-container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-div {
+  padding: 0;
+  width: 150px;
+  opacity: 0.25;
+  font-size: 0.75rem;
+}
+
+#our-services {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 4rem;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.service-item-title {
+  padding-bottom: 0.7rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.service-item-description {
+  font-size: 0.8rem;
+  font-weight: 400;
+  opacity: 0.4;
+  align-self: flex-end;
+  line-height: 1.4rem;
+}
+
+.icon-container {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  padding-right: 2em;
+}
+
+.media-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+#our-clients {
+  margin: 0 auto;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.client-item {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#our-team {
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 120px;
+}
+
+.team-member-container {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.team-member-photo img {
+  border-radius: 50%;
+}
+
+.team-member-photo {
+  padding-right: 20px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.team-member-name {
+  font-weight: 800;
+  font-size: 20px;
+  align-self: flex-start;
+}
+
+.team-member-role {
+  font-weight: 200;
+  font-size: 12px;
+  opacity: 0.4;
+  padding-top: 10px;
+}
+
+footer {
+  background: #f7f7f7;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#footer-logo {
+  padding-left: 70px;
+}
