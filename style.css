@@ -26,6 +26,16 @@ footer {
   width: 80%;
 }
 
+nav {
+  position: absolute;
+  top: 0.05vh;
+  /* 標題水平置中 左右設為0 邊界自動計算*/
+  left: 0;
+  right: 0;
+  margin: auto;
+
+}
+
 #logo-title {
   font-size: 18px;
   padding-left: 20px;
@@ -79,10 +89,7 @@ footer {
   background-image: url(./src/img/scroll_down.svg);
 }
 
-nav {
-  position: absolute;
-  top: 1px
-}
+
 
 main {
   position: absolute;
