@@ -47,3 +47,17 @@ absolute的水平置中，原先的flex置中失效了
 ```
 animation: fadein 4s;
 ```
+
+- img標籤的白邊問題
+  - [如何解决 img 标签四周出现白边的问题](https://blog.csdn.net/yiguoxiaohai/article/details/121673610)
+
+  ```
+  四周出現白邊
+  <img class="fe-img">
+  .bg-img {
+  background-image: url(./src/img/2_back.png);
+  }
+  
+	<img class="fe-img" src="./src/img/fe.png">
+
+  ```
