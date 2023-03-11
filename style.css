@@ -27,6 +27,7 @@ footer {
 }
 
 nav {
+  animation: fadein 4s;
   position: absolute;
   top: 0.05vh;
   /* 標題水平置中 左右設為0 邊界自動計算*/
@@ -99,21 +100,40 @@ main {
 @keyframes slidein {
   from {
     transform: scale(2);
+    height: 110vh;
     /* height: 150vh;
     width: 150%; */
   }
 
   to {
     transform: scale(1);
+    height: 100vh;
     /* height: 100vh;
     width: 100%; */
   }
 }
 
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
 main {
   margin: 0 auto;
   width: 80%;
-
+  animation: fadein 4s;
 }
 
 #headline {
@@ -171,6 +191,7 @@ main {
 }
 
 .page-div-container {
+  background-color: #5528ff;
   padding-top: 5rem;
   padding-bottom: 5rem;
   display: flex;
