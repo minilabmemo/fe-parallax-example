@@ -5,6 +5,7 @@
   --about-color: #fcfcfc;
   --border-it: 1px solid rgb(255, 255, 255);
   --font-var: "Apple LiGothic", "Ubuntu", sans-serif;
+  --font-size: 20px;
 }
 
 
@@ -29,7 +30,7 @@ footer {
 nav {
   animation: fadein 4s;
   position: absolute;
-  top: 0.05vh;
+  top: 0.056vh;
   /* 標題水平置中 左右設為0 邊界自動計算*/
   left: 0;
   right: 0;
@@ -38,17 +39,18 @@ nav {
 }
 
 #logo-title {
-  font-size: 18px;
+  font-size: var(--font-size);
+  ;
   padding-left: 20px;
 }
 
 #nav-items {
   margin-left: auto;
-  font-size: 12px;
+  font-size: var(--font-size);
 }
 
 #nav-items a {
-  padding: 1px 20px 1px 20px;
+  padding: 9px 20px 9px 20px;
 }
 
 #social-media {
@@ -101,15 +103,12 @@ main {
   from {
     transform: scale(2);
     height: 110vh;
-    /* height: 150vh;
-    width: 150%; */
   }
 
   to {
     transform: scale(1);
     height: 100vh;
-    /* height: 100vh;
-    width: 100%; */
+
   }
 }
 
@@ -166,26 +165,13 @@ main {
   left: 15vw;
 }
 
-.purple-button {
-  background: var(--purp);
+
+.write-button {
+
   color: var(--main-bg-color);
   font-family: var(--font-var);
-  font-size: 1rem;
-  font-weight: 300;
-  border-radius: 10px;
-  height: 3rem;
-  width: 11rem;
-}
-
-.purple-button:hover {
-  background-color: black;
-}
-
-.purple-button--small {
-  background: var(--purp);
-  color: var(--main-bg-color);
-  font-family: var(--font-var);
-  border-radius: 5px;
+  border: solid 1px #ffffff;
+  border-radius: 30px;
   height: 3rem;
   width: 11rem;
 }
