@@ -28,7 +28,7 @@ footer {
 }
 
 nav {
-  animation: fadein 4s;
+  animation: fadein 1s;
   position: absolute;
   top: 0.056vh;
   /* 標題水平置中 左右設為0 邊界自動計算*/
@@ -78,7 +78,7 @@ nav {
   background-repeat: round;
   transform: scale(1);
   animation-name: slidein;
-  animation-duration: 4s;
+  animation-duration: 1s;
   /* animation-delay: 1s; */
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
@@ -97,7 +97,7 @@ nav {
   transform: scale(1);
   margin: 0 auto;
   animation-name: slidein-fe;
-  animation-duration: 4s;
+  animation-duration: 1s;
   /* animation-delay: 1s; */
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
@@ -118,55 +118,13 @@ main {
   top: 10%
 }
 
-@keyframes slidein {
-  from {
-    transform: scale(2);
-    height: 110vh;
-  }
-
-  to {
-    transform: scale(1);
-    height: 100vh;
-
-  }
-}
-
-@keyframes slidein-fe {
-  from {
-
-    transform: scale(1.2) translateX(-10px);
-
-  }
-
-  to {
-    transform: scale(1);
-
-
-  }
-}
-
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 0.5;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 
 
 main {
   margin: 0 auto;
   width: 80%;
   animation-delay: 3s;
-  animation: fadein 4s;
+  animation: fadein 1s;
   /* animation-fill-mode: forwards; */
 }
 
