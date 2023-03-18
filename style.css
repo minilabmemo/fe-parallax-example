@@ -104,23 +104,23 @@ nav {
   /*TODO tidy*/
 }
 
-.scoll_down {
+.scroll_down {
+  width: 94;
+  height: 60;
   position: absolute;
-  top: 90%;
-  left: 50%;
-  background-image: url(./src/img/scroll_down.svg);
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  /* z-index: 0; */
+  /* background-image: url(./src/img/scroll_down.svg); */
 }
 
 
-
 main {
+
   position: absolute;
-  top: 10%
-}
-
-
-
-main {
+  top: 10%;
   margin: 0 auto;
   width: 80%;
   animation-delay: 3s;
