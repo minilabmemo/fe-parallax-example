@@ -124,7 +124,7 @@ main {
   margin: 0 auto;
   width: 80%;
   animation-delay: 3s;
-  animation: fadein 1s;
+  animation: fadein-main 1s;
   /* animation-fill-mode: forwards; */
 }
 
@@ -154,7 +154,7 @@ main {
   line-height: 34px;
   padding-bottom: 1em;
   position: absolute;
-  top: 35vh;
+  top: 30vh;
   left: 15vw;
 }
 
