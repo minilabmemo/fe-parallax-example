@@ -79,7 +79,7 @@ nav {
   transform: scale(1);
   animation-name: slidein;
   animation-duration: 4s;
-  animation-delay: 1s;
+  /* animation-delay: 1s; */
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
 }
@@ -88,21 +88,19 @@ nav {
 
 
 .fe-img {
-
-  width: 75%;
+  width: 1200px;
   height: 451px;
-  background-repeat: no-repeat;
   position: absolute;
-
   bottom: 0;
   right: 0;
   left: 0;
+  transform: scale(1);
   margin: 0 auto;
-  /* animation-name: slidein;
+  animation-name: slidein-fe;
   animation-duration: 4s;
-  animation-delay: 1s;
+  /* animation-delay: 1s; */
   animation-timing-function: ease-in-out;
-  -webkit-animation-timing-function: ease-in-out; */
+  -webkit-animation-timing-function: ease-in-out;
   /*TODO tidy*/
 }
 
@@ -133,6 +131,20 @@ main {
   }
 }
 
+@keyframes slidein-fe {
+  from {
+
+    transform: scale(1.2) translateX(-10px);
+
+  }
+
+  to {
+    transform: scale(1);
+
+
+  }
+}
+
 
 @keyframes fadein {
   0% {
@@ -153,7 +165,9 @@ main {
 main {
   margin: 0 auto;
   width: 80%;
+  animation-delay: 3s;
   animation: fadein 4s;
+  /* animation-fill-mode: forwards; */
 }
 
 #headline {
