@@ -244,9 +244,11 @@ main {
 #our-team {
   margin: auto;
   width: 80%;
+
+  /*TBD*/
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding-bottom: 120px;
+  grid-template-columns: repeat(3, 2fr);
+  padding: 10px;
 }
 
 .team-member-container {
@@ -255,10 +257,12 @@ main {
   padding-bottom: 2rem;
   display: flex;
   justify-content: center;
+  animation-delay: 3s;
+  animation: fadein-main 1s;
 }
 
 .team-member-photo img {
-  border-radius: 50%;
+  border-radius: 10px;
 }
 
 .team-member-photo {
@@ -293,4 +297,9 @@ footer {
 
 #footer-logo {
   padding-left: 70px;
+}
+
+
+.blue-bg {
+  background-color: #5528ff;
 }
