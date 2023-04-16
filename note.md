@@ -73,14 +73,24 @@ scolldown = function () {
 - 下半頁滾動特效
   - 下半頁是要滾動到此才會出現的，因此直接在class上加animation無法讓效果滾到這邊才開始出現！
   - 這時要加入 window.addEventListener("scroll", xxx); 並在xxx裡面加入判斷邏輯
-  ```go
+  ```js
    //JS
       const <element> = document.querySelector(<class>); //注意要把ＪＳ寫入到ＤＯＭ出現之後，否則會null
      getBoundingClientRect().top 元素距離視窗的高度(可為負值) < innerHeight 視窗內的網頁內容高度 *0.8(觸發的係數可自行調整)
-      <element>.classList.add("show");
+      <element>.classList.add("show");    //加入class
   //CSS
   .<class>.show {
   animation: fadein-main 1s;
   }
+
+  //JS 第二種寫法 直接操控style
+   moon.style.animation = 'fadein-main 1s';
+
+   //JS 改一下找到全部querySelectorAll 這時回傳的是NodeListOf<Element>
+   const cards = document.querySelectorAll('.team-member-container');
+   //控制不同出現速度  
+   card.style.animation = ` 2s fadein-main ${(i + 1) * 0.5}s ease-in-out`
+
+
   ```
   
