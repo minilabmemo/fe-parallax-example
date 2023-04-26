@@ -3,7 +3,8 @@
 ## start
 - v1.0.0
 - sandcodebox （vanilla）
-- landing-page-forked
+- landing-page-forked to fe-night-sky
+- parallax animation 
 
 
   ## 啟動

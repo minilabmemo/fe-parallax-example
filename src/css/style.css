@@ -6,6 +6,7 @@
   --border-it: 1px solid rgb(255, 255, 255);
   --font-var: "Apple LiGothic", "Ubuntu", sans-serif;
   --font-size: 20px;
+  --font-color: #fffffd;
 }
 
 
@@ -29,7 +30,8 @@ footer {
 
 nav {
   animation: fadein 1s;
-  position: absolute;
+  position: fixed;
+  z-index: 1;
   top: 0.056vh;
   /* 標題水平置中 左右設為0 邊界自動計算*/
   left: 0;
@@ -141,7 +143,23 @@ main {
 
 }
 
+.main-font-color {
+  color: var(--font-color);
 
+}
+
+.text-center {
+  text-align: center;
+}
+
+.desc-frame {
+  margin: 223px 0px 56px 0px;
+}
+
+.desc-font {
+  font-size: 20px;
+  font-weight: 400;
+}
 
 #about {
   margin: 0 auto;
@@ -246,7 +264,7 @@ main {
 
   /*TBD*/
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
+  grid-template-columns: repeat(4, 2fr);
   padding: 10px;
 }
 
@@ -255,7 +273,9 @@ main {
   padding-top: 2rem;
   padding-bottom: 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  color: var(--about-color);
 }
 
 .team-member-container.show {
@@ -274,24 +294,24 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 20px;
+  padding-top: 48px;
+  text-align: center;
 }
 
-.team-member-name {
+.team-member-photo-name {
   font-weight: 800;
   font-size: 20px;
-  align-self: flex-start;
+  /* align-self: flex-start; */
 }
 
-.team-member-role {
+.team-member-photo-desc {
   font-weight: 200;
-  font-size: 12px;
-  opacity: 0.4;
-  padding-top: 10px;
+  font-size: 18px;
+  padding-top: 8px;
 }
 
 footer {
-  background: #f7f7f7;
+  background: #071F4D;
   width: 100%;
   box-sizing: border-box;
 }
@@ -302,5 +322,5 @@ footer {
 
 
 .blue-bg {
-  background-color: #5528ff;
+  background-color: #071F4D;
 }
