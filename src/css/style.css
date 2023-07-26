@@ -1,12 +1,14 @@
 :root {
-  --main-bg-color: #fffffd;
+  --main-bg-color: #026EB6;
   --purp: #5528ff;
-  --headline-color: #ffffff;
-  --about-color: #fcfcfc;
+  --headline-color: #026EB6;
+  --about-color: #026EB6;
   --border-it: 1px solid rgb(255, 255, 255);
   --font-var: "Apple LiGothic", "Ubuntu", sans-serif;
   --font-size: 20px;
-  --font-color: #fffffd;
+  --font-color: #026EB6;
+  --text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --back-color: #B5E7FF;
 }
 
 
@@ -21,7 +23,7 @@ body {
 nav,
 footer {
   padding: 1.5rem;
-  color: var(--headline-color);
+  color: var(--font-color);
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -29,7 +31,7 @@ footer {
 }
 
 nav {
-  animation: fadein 1s;
+  animation: fade-in 1s;
   position: fixed;
   z-index: 1;
   top: 0.056vh;
@@ -42,17 +44,37 @@ nav {
 
 #logo-title {
   font-size: var(--font-size);
-  ;
   padding-left: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 #nav-items {
   margin-left: auto;
   font-size: var(--font-size);
+
+
 }
 
 #nav-items a {
   padding: 9px 20px 9px 20px;
+  text-shadow: var(--text-shadow);
+}
+
+#nav-items a.contact-button {
+  text-shadow: none;
+}
+
+.contact-button {
+
+  color: var(--main-bg-color);
+  font-family: var(--font-var);
+  border: solid 1px var(--main-bg-color);
+  border-radius: 30px;
+  height: 3rem;
+  width: 11rem;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+  ;
+
 }
 
 #social-media {
@@ -79,7 +101,7 @@ nav {
 
   background-size: cover;
   /*完整覆蓋瀏覽器的背景圖片*/
-  background-image: url(../img/2_back.png);
+  background-image: url(../img/back.png);
   background-repeat: round;
   transform: scale(1);
   animation-name: slide-in;
@@ -95,7 +117,6 @@ nav {
   width: 584px;
   height: 584px;
   position: absolute;
-
   bottom: 0;
   right: 0;
   left: 0;
@@ -103,10 +124,10 @@ nav {
   margin: 0 auto;
   animation-name: slide-in-fe;
   animation-duration: 1s;
-  /* animation-delay: 1s; */
+
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
-  /*TODO tidy*/
+
 }
 
 .scroll_down {
@@ -116,9 +137,14 @@ nav {
   bottom: 30px;
   right: 0;
   left: 0;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.7));
+  /* img content shadow */
   margin: 0 auto;
-  /* z-index: 0; */
+
+
+  /* z-index: 0;filter:  */
   /* background-image: url(./src/img/scroll_down.svg); */
+
 }
 
 
@@ -129,13 +155,15 @@ main {
   margin: 0 auto;
   width: 80%;
   animation-delay: 3s;
-  animation: fadein-main 1s;
+  animation: fade-in-main 1s;
+
   /* animation-fill-mode: forwards; */
 }
 
 #headline {
   margin: 0 auto;
   color: var(--about-color);
+  text-shadow: var(--text-shadow);
   font-size: 48px;
   font-weight: 400;
   line-height: 48px;
@@ -177,21 +205,14 @@ main {
   position: absolute;
   top: 30vh;
   left: 15vw;
+  text-shadow: var(--text-shadow);
 }
 
 
-.write-button {
 
-  color: var(--main-bg-color);
-  font-family: var(--font-var);
-  border: solid 1px #ffffff;
-  border-radius: 30px;
-  height: 3rem;
-  width: 11rem;
-}
 
 .page-div-container {
-  background-color: #5528ff;
+  background-color: var(--font-color);
   padding-top: 5rem;
   padding-bottom: 5rem;
   display: flex;
@@ -262,7 +283,7 @@ main {
   padding-bottom: 2rem;
 }
 
-#our-team {
+#our-features {
   margin: auto;
   width: 80%;
 
@@ -272,7 +293,7 @@ main {
   padding: 10px;
 }
 
-.team-member-container {
+.group-container {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -282,15 +303,15 @@ main {
   color: var(--about-color);
 }
 
-.team-member-container.show {
-  animation: fadein-main 1s;
+.group-container.show {
+  animation: fade-in-photo 1s;
 }
 
-.team-member-photo img {
+.group-photo img {
   border-radius: 10px;
 }
 
-.team-member-photo {
+.group-photo {
   padding-right: 20px;
 }
 
@@ -302,20 +323,20 @@ main {
   text-align: center;
 }
 
-.team-member-photo-name {
+.group-photo-name {
   font-weight: 800;
   font-size: 20px;
   /* align-self: flex-start; */
 }
 
-.team-member-photo-desc {
+.group-photo-desc {
   font-weight: 200;
   font-size: 18px;
   padding-top: 8px;
 }
 
 footer {
-  background: #071F4D;
+  background: var(--main-bg-color);
   width: 100%;
   box-sizing: border-box;
 }
@@ -326,5 +347,5 @@ footer {
 
 
 .blue-bg {
-  background-color: #071F4D;
+  background-color: var(--back-color);
 }

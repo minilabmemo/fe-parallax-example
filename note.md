@@ -41,7 +41,7 @@ absolute的水平置中，原先的flex置中失效了
 
 - 淡出動畫
 ```
-animation: fadein 4s;
+animation: fade-in 4s;
 ```
 
 - img標籤的白邊問題 與使用背景圖background-image
@@ -80,16 +80,16 @@ scolldown = function () {
       <element>.classList.add("show");    //加入class
   //CSS
   .<class>.show {
-  animation: fadein-main 1s;
+  animation: fade-in-photo 1s;
   }
 
   //JS 第二種寫法 直接操控style
-   moon.style.animation = 'fadein-main 1s';
+   moon.style.animation = 'fade-in-photo 1s';
 
    //JS 改一下找到全部querySelectorAll 這時回傳的是NodeListOf<Element>
-   const cards = document.querySelectorAll('.team-member-container');
+   const cards = document.querySelectorAll('.group-container');
    //控制不同出現速度  
-   card.style.animation = ` 2s fadein-main ${(i + 1) * 0.5}s ease-in-out`
+   card.style.animation = ` 2s fade-in-photo ${(i + 1) * 0.5}s ease-in-out`
 
 
   ```
