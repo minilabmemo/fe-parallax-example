@@ -1,4 +1,4 @@
-@keyframes slidein {
+@keyframes slide-in {
   from {
     transform: scale(2);
     height: 110vh;
@@ -11,11 +11,10 @@
   }
 }
 
-@keyframes slidein-fe {
+@keyframes slide-in-fe {
   from {
 
-    transform: scale(1.2) translateX(-10px);
-
+    transform: scale(1.8) translateX(-130px) translateY(200px)
   }
 
   to {
