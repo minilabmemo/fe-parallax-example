@@ -124,7 +124,6 @@ nav {
   margin: 0 auto;
   animation-name: slide-in-fe;
   animation-duration: 1s;
-
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
 
@@ -137,27 +136,26 @@ nav {
   bottom: 30px;
   right: 0;
   left: 0;
-  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.7));
   /* img content shadow */
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.7));
   margin: 0 auto;
-
-
-  /* z-index: 0;filter:  */
-  /* background-image: url(./src/img/scroll_down.svg); */
+  opacity: 0;
+  animation: 1s fade-in-scroll 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 
 }
 
 
 main {
-
   position: absolute;
   top: 10%;
   margin: 0 auto;
   width: 80%;
+  animation: fade-in-main 3s;
   animation-delay: 3s;
   animation: fade-in-main 1s;
-
-  /* animation-fill-mode: forwards; */
+  animation-timing-function: ease-in-out;
 }
 
 #headline {
