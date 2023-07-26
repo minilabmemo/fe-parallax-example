@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/js/click.js"],"names":["scolldown","window","scrollTo","document","body","clientHeight"],"mappings":";AAEAA,UAAY,WACVC,OAAOC,SAAS,EAAGC,SAASC,KAAKC","file":"click.78b51f9d.js","sourceRoot":"..","sourcesContent":["\n\nscolldown = function () {\n  window.scrollTo(0, document.body.clientHeight)\n}\n"]}
