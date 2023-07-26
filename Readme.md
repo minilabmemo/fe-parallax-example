@@ -27,3 +27,17 @@
   docker run -p 80:80 fe-night-sky
   打開 http://localhost 看到網站了！
   ```
+
+  - 改變預設生成資料夾 /dist 改成生成在/build 
+  採用gh-pages -d build 時可能會抓這邊。
+  ```
+  "build": "parcel build index.html --out-dir build",
+  ```
+
+  ## deploy
+  ```
+  $ npm run deploy
+  > gh-pages -d build
+
+Published
+  ```
