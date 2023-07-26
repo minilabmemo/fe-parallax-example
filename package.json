@@ -1,17 +1,18 @@
 {
   "name": "fe-parallax-example",
-  "homepage": "https://minilabmemo.github.io/fe-night-sky",
+  "homepage": "https://minilabmemo.github.io/fe-parallax-example",
   "version": "1.0.0",
   "description": "Simple Parcel Sandbox and parallax example",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html --out-dir build",
+    "build": "parcel build index.html --out-dir build  --public-url ./  ",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "src": "^1.1.2"
   },
   "devDependencies": {
     "parcel-bundler": "^1.6.1"
