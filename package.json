@@ -8,13 +8,16 @@
     "start": "parcel index.html --open",
     "build": "parcel build index.html --out-dir build  --public-url ./  ",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "test": "jest"
   },
   "dependencies": {
     "gh-pages": "^5.0.0",
     "src": "^1.1.2"
   },
   "devDependencies": {
+    "jest": "^27.0.0",
+    "jest-serializer-html": "^7.1.0",
     "parcel-bundler": "^1.6.1"
   }
 }
