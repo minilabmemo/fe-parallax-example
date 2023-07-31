@@ -1,0 +1,321 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`測試 main.css 快照 1`] = `
+"@charset \\"UTF-8\\";
+body {
+  font-family: \\"Apple LiGothic\\", \\"Ubuntu\\", sans-serif;
+  background: #026EB6;
+}
+
+:root {
+  --font-size: 20px;
+  --text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-xl {
+  font-size: 20px;
+}
+
+nav,
+footer {
+  padding: 1.5rem;
+  color: #026EB6;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+nav {
+  animation: fade-in 1s;
+  position: fixed;
+  z-index: 1;
+  top: 0.056vh;
+  /* 標題水平置中 左右設為0 邊界自動計算*/
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#logo-title {
+  font-size: var(--font-size);
+  padding-left: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.m-nav {
+  margin-left: auto;
+  font-size: var(--font-size);
+}
+.m-nav a {
+  padding: 9px 20px 9px 20px;
+  text-shadow: var(--text-shadow);
+}
+.m-nav .contact-button {
+  text-shadow: none;
+  color: #026EB6;
+  font-family: var(--font-var);
+  border: solid 1px #026EB6;
+  border-radius: 30px;
+  height: 3rem;
+  width: 11rem;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#social-media {
+  margin-left: auto;
+  margin-right: 120px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+}
+
+.full-page-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-img-animate {
+  height: 100vh;
+  /*vh代表的是view height，也就是螢幕可視範圍高度的百分比*/
+  background-size: cover;
+  /*完整覆蓋瀏覽器的背景圖片*/
+  background-image: url(../img/back.png);
+  background-repeat: round;
+  transform: scale(1);
+  animation-name: slide-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+.fe-img {
+  width: 584px;
+  height: 584px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: scale(1);
+  margin: 0 auto;
+  animation-name: slide-in-fe;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+.scroll_down {
+  width: 94;
+  height: 60;
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  /* img content shadow */
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.7));
+  margin: 0 auto;
+  opacity: 0;
+  animation: 1s fade-in-scroll 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+main {
+  position: absolute;
+  top: 10%;
+  margin: 0 auto;
+  width: 80%;
+  animation-delay: 3s;
+  animation: fade-in-main 1s;
+  animation-timing-function: ease-in-out;
+}
+
+#headline {
+  margin: 0 auto;
+  color: #026EB6;
+  text-shadow: var(--text-shadow);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  position: absolute;
+  top: 20vh;
+  left: 15vw;
+}
+
+.main-font-color {
+  color: #026EB6;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.desc-frame {
+  margin: 223px 0px 56px 0px;
+}
+
+.desc-font {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#about {
+  margin: 0 auto;
+  color: #026EB6;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.9;
+  width: 50%;
+  line-height: 34px;
+  padding-bottom: 1em;
+  position: absolute;
+  top: 30vh;
+  left: 15vw;
+  text-shadow: var(--text-shadow);
+}
+
+.page-div-container {
+  background-color: #026EB6;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-div {
+  padding: 0;
+  width: 150px;
+  opacity: 0.25;
+  font-size: 0.75rem;
+}
+
+#our-services {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 4rem;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.service-item-title {
+  padding-bottom: 0.7rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.service-item-description {
+  font-size: 0.8rem;
+  font-weight: 400;
+  opacity: 0.4;
+  align-self: flex-end;
+  line-height: 1.4rem;
+}
+
+.icon-container {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  padding-right: 2em;
+}
+
+.media-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+#our-clients {
+  margin: 0 auto;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.client-item {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#our-features {
+  margin: auto;
+  width: 80%;
+  /*TBD*/
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  padding: 10px;
+}
+
+.group-container {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #026EB6;
+}
+
+.group-container.show {
+  animation: fade-in-photo 1s;
+}
+
+.group-photo img {
+  border-radius: 10px;
+}
+
+.group-photo {
+  padding-right: 20px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 48px;
+  text-align: center;
+}
+
+.group-photo-name {
+  font-weight: 800;
+  font-size: 20px;
+  /* align-self: flex-start; */
+}
+
+.group-photo-desc {
+  font-weight: 200;
+  font-size: 18px;
+  padding-top: 8px;
+}
+
+footer {
+  background: #026EB6;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#footer-logo {
+  padding-left: 70px;
+}
+
+.blue-bg {
+  background-color: #B5E7FF;
+}
+
+/*# sourceMappingURL=main.css.map */"
+`;
