@@ -2,6 +2,7 @@
 
 exports[`測試 style.css 快照 1`] = `
 "@charset \\"UTF-8\\";
+@import './partials/base/_normalize.css';
 @import './partials/base/_animate.css';
 body {
   font-family: \\"Apple LiGothic\\", \\"Ubuntu\\", sans-serif;
@@ -15,8 +16,23 @@ body {
   overflow: hidden;
 }
 
+/* color */
+.primary {
+  color: #026EB6;
+}
+
+/* font size*/
 .text-xl {
   font-size: 20px;
+}
+
+.text-5xl {
+  font-size: 48px;
+}
+
+/* text align */
+.text-center {
+  text-align: center;
 }
 
 nav {
@@ -49,6 +65,15 @@ nav {
 .m-nav a {
   padding: 9px 20px 9px 20px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+.m-nav a:visited {
+  color: #026EB6;
+}
+.m-nav a:hover {
+  background-color: #026EB6;
+  color: white;
+  border-radius: 20px;
 }
 .m-nav .contact-button {
   text-shadow: none;
@@ -75,7 +100,7 @@ nav {
   -webkit-animation-timing-function: ease-in-out;
 }
 
-.fe-img {
+.fe-img-animate {
   width: 584px;
   height: 584px;
   position: absolute;
@@ -116,9 +141,8 @@ main {
   animation-timing-function: ease-in-out;
 }
 
-#headline {
+#main-text {
   margin: 0 auto;
-  color: #026EB6;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 48px;
   font-weight: 400;
@@ -130,26 +154,8 @@ main {
   left: 15vw;
 }
 
-.main-font-color {
-  color: #026EB6;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.desc-frame {
-  margin: 223px 0px 56px 0px;
-}
-
-.desc-font {
-  font-size: 20px;
-  font-weight: 400;
-}
-
-#about {
+#main-sub-text {
   margin: 0 auto;
-  color: #026EB6;
   font-size: 20px;
   font-weight: 400;
   opacity: 0.9;
@@ -160,6 +166,15 @@ main {
   top: 30vh;
   left: 15vw;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.feature-title {
+  margin: 20vh 0px 56px 0px;
+}
+
+.feature-subtitle {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .page-div-container {
@@ -237,7 +252,7 @@ main {
   padding: 10px;
 }
 
-.group-container {
+.card {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -247,19 +262,19 @@ main {
   color: #026EB6;
 }
 
-.group-container.show {
+/* debug effect */
+.card.show {
   animation: fade-in-photo 1s;
 }
 
-.group-photo img {
+.card__photo {
+  padding-right: 20px;
+}
+.card__photo img {
   border-radius: 10px;
 }
 
-.group-photo {
-  padding-right: 20px;
-}
-
-.info-container {
+.card__info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -267,19 +282,18 @@ main {
   text-align: center;
 }
 
-.group-photo-name {
+.card__info__title {
   font-weight: 800;
-  font-size: 20px;
-  /* align-self: flex-start; */
+  font-size: 30px;
 }
 
-.group-photo-desc {
+.card__info__text {
   font-weight: 200;
-  font-size: 18px;
+  font-size: 20px;
   padding-top: 8px;
 }
 
-.blue-bg {
+.blue-light-bkg {
   background-color: #B5E7FF;
 }
 

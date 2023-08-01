@@ -12,7 +12,7 @@
   -webkit-animation-timing-function: ease-in-out;
 }
 
-.fe-img {
+.fe-img-animate {
   width: 584px;
   height: 584px;
   position: absolute;
@@ -53,11 +53,10 @@ main {
   animation-timing-function: ease-in-out;
 }
 
-#headline {
+#main-text {
   margin: 0 auto;
-  color: $primary-color;
   text-shadow: $text-shadow;
-  font-size: 48px;
+  font-size: $font-size-5xl;
   font-weight: 400;
   line-height: 48px;
   letter-spacing: 0.05em;
@@ -65,4 +64,18 @@ main {
   position: absolute;
   top: 20vh;
   left: 15vw;
+}
+
+#main-sub-text {
+  margin: 0 auto;
+  font-size: $font-size-xl;
+  font-weight: 400;
+  opacity: 0.9;
+  width: 50%;
+  line-height: 34px;
+  padding-bottom: 1em;
+  position: absolute;
+  top: 30vh;
+  left: 15vw;
+  text-shadow: $text-shadow;
 }

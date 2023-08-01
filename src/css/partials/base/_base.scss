@@ -12,7 +12,21 @@ body {
   overflow: hidden;
 }
 
+/* color */
+.primary {
+  color: $primary-color;
+}
 
+/* font size*/
 .text-xl {
   font-size: $font-size-xl;
+}
+
+.text-5xl {
+  font-size: $font-size-5xl;
+}
+
+/* text align */
+.text-center {
+  text-align: center;
 }

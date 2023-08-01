@@ -1,34 +1,13 @@
-.main-font-color {
-  color: $primary-color;
+.feature-title {
+  margin: 20vh 0px 56px 0px;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.desc-frame {
-  margin: 223px 0px 56px 0px;
-}
-
-.desc-font {
-  font-size: 20px;
+.feature-subtitle {
+  font-size: $font-size-xl;
   font-weight: 400;
 }
 
-#about {
-  margin: 0 auto;
-  color: $primary-color;
-  font-size: 20px;
-  font-weight: 400;
-  opacity: 0.9;
-  width: 50%;
-  line-height: 34px;
-  padding-bottom: 1em;
-  position: absolute;
-  top: 30vh;
-  left: 15vw;
-  text-shadow: $text-shadow;
-}
+
 
 .page-div-container {
   background-color: $primary-color;
@@ -107,7 +86,7 @@
   padding: 10px;
 }
 
-.group-container {
+.card {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -117,19 +96,21 @@
   color: $primary-color;
 }
 
-.group-container.show {
+/* debug effect */
+.card.show {
   animation: fade-in-photo 1s;
 }
 
-.group-photo img {
-  border-radius: 10px;
-}
 
-.group-photo {
+.card__photo {
   padding-right: 20px;
+
+  img {
+    border-radius: 10px;
+  }
 }
 
-.info-container {
+.card__info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,18 +118,18 @@
   text-align: center;
 }
 
-.group-photo-name {
+.card__info__title {
   font-weight: 800;
-  font-size: 20px;
-  /* align-self: flex-start; */
+  font-size: $font-size-3xl;
+
 }
 
-.group-photo-desc {
+.card__info__text {
   font-weight: 200;
-  font-size: 18px;
+  font-size: $font-size-xl;
   padding-top: 8px;
 }
 
-.blue-bg {
-  background-color: $background-color;
+.blue-light-bkg {
+  background-color: $blue-light;
 }

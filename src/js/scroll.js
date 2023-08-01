@@ -1,7 +1,7 @@
 
 export function install() {
 
-  const cards = document.querySelectorAll('.group-container');
+  const cards = document.querySelectorAll('.card');
   window.addEventListener("scroll", checkBoxes);
   checkBoxes();
   function checkBoxes() {

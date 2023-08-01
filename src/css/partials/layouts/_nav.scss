@@ -19,8 +19,6 @@ nav {
 
 
 
-
-
 .m-nav {
   margin-left: auto;
   font-size: $font-size-xl;
@@ -28,7 +26,21 @@ nav {
   a {
     padding: 9px 20px 9px 20px;
     text-shadow: $text-shadow;
+    text-decoration: none;
   }
+
+  a:visited {
+    color: $primary-color;
+  }
+
+  a:hover {
+    background-color: $primary-color;
+    color: white;
+    border-radius: 20px;
+
+  }
+
+
 
   .contact-button {
     text-shadow: none;
