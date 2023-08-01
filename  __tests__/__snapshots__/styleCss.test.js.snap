@@ -1,32 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`測試 main.css 快照 1`] = `
+exports[`測試 style.css 快照 1`] = `
 "@charset \\"UTF-8\\";
+@import './partials/base/_animate.css';
 body {
   font-family: \\"Apple LiGothic\\", \\"Ubuntu\\", sans-serif;
   background: #026EB6;
 }
 
-:root {
-  --font-size: 20px;
-  --text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.full-page-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .text-xl {
   font-size: 20px;
 }
 
-nav,
-footer {
+nav {
   padding: 1.5rem;
   color: #026EB6;
   display: flex;
   align-items: center;
   margin: 0 auto;
   width: 80%;
-}
-
-nav {
   animation: fade-in 1s;
   position: fixed;
   z-index: 1;
@@ -38,18 +37,18 @@ nav {
 }
 
 #logo-title {
-  font-size: var(--font-size);
+  font-size: 20px;
   padding-left: 20px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .m-nav {
   margin-left: auto;
-  font-size: var(--font-size);
+  font-size: 20px;
 }
 .m-nav a {
   padding: 9px 20px 9px 20px;
-  text-shadow: var(--text-shadow);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .m-nav .contact-button {
   text-shadow: none;
@@ -60,23 +59,6 @@ nav {
   height: 3rem;
   width: 11rem;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
-}
-
-#social-media {
-  margin-left: auto;
-  margin-right: 120px;
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 15%;
-}
-
-.full-page-container {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
 }
 
 .bg-img-animate {
@@ -137,7 +119,7 @@ main {
 #headline {
   margin: 0 auto;
   color: #026EB6;
-  text-shadow: var(--text-shadow);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 48px;
   font-weight: 400;
   line-height: 48px;
@@ -177,7 +159,7 @@ main {
   position: absolute;
   top: 30vh;
   left: 15vw;
-  text-shadow: var(--text-shadow);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .page-div-container {
@@ -231,12 +213,6 @@ main {
   display: flex;
   justify-content: center;
   padding-right: 2em;
-}
-
-.media-container {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
 }
 
 #our-clients {
@@ -303,7 +279,17 @@ main {
   padding-top: 8px;
 }
 
+.blue-bg {
+  background-color: #B5E7FF;
+}
+
 footer {
+  padding: 1.5rem;
+  color: #026EB6;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
   background: #026EB6;
   width: 100%;
   box-sizing: border-box;
@@ -313,9 +299,13 @@ footer {
   padding-left: 70px;
 }
 
-.blue-bg {
-  background-color: #B5E7FF;
-}
-
-/*# sourceMappingURL=main.css.map */"
+#social-media {
+  margin-left: auto;
+  margin-right: 120px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+}/*# sourceMappingURL=style.css.map */"
 `;

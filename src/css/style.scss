@@ -1,0 +1,11 @@
+@charset "UTF-8";
+@import './partials/base/base';
+@import './partials/base/_animate.css';
+
+@import './partials/global/variables';
+@import './partials/global/mixins';
+
+@import './partials/layouts/nav';
+@import './partials/layouts/main';
+@import './partials/layouts/feature';
+@import './partials/layouts/footer';

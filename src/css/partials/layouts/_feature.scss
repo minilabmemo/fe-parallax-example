@@ -1,0 +1,154 @@
+.main-font-color {
+  color: $primary-color;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.desc-frame {
+  margin: 223px 0px 56px 0px;
+}
+
+.desc-font {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#about {
+  margin: 0 auto;
+  color: $primary-color;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.9;
+  width: 50%;
+  line-height: 34px;
+  padding-bottom: 1em;
+  position: absolute;
+  top: 30vh;
+  left: 15vw;
+  text-shadow: $text-shadow;
+}
+
+.page-div-container {
+  background-color: $primary-color;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-div {
+  padding: 0;
+  width: 150px;
+  opacity: 0.25;
+  font-size: 0.75rem;
+}
+
+#our-services {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 4rem;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.service-item-title {
+  padding-bottom: 0.7rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.service-item-description {
+  font-size: 0.8rem;
+  font-weight: 400;
+  opacity: 0.4;
+  align-self: flex-end;
+  line-height: 1.4rem;
+}
+
+.icon-container {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  padding-right: 2em;
+}
+
+
+
+#our-clients {
+  margin: 0 auto;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.client-item {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#our-features {
+  margin: auto;
+  width: 80%;
+  /*TBD*/
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  padding: 10px;
+}
+
+.group-container {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $primary-color;
+}
+
+.group-container.show {
+  animation: fade-in-photo 1s;
+}
+
+.group-photo img {
+  border-radius: 10px;
+}
+
+.group-photo {
+  padding-right: 20px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 48px;
+  text-align: center;
+}
+
+.group-photo-name {
+  font-weight: 800;
+  font-size: 20px;
+  /* align-self: flex-start; */
+}
+
+.group-photo-desc {
+  font-weight: 200;
+  font-size: 18px;
+  padding-top: 8px;
+}
+
+.blue-bg {
+  background-color: $background-color;
+}

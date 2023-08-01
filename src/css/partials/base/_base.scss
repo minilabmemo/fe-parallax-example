@@ -1,0 +1,18 @@
+@import '../global/variables';
+
+body {
+  font-family: "Apple LiGothic", "Ubuntu", sans-serif;
+  background: $primary-color;
+}
+
+.full-page-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.text-xl {
+  font-size: $font-size-xl;
+}

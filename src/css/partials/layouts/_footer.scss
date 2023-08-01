@@ -1,0 +1,22 @@
+footer {
+  @include container_center;
+  background: $primary-color;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+#footer-logo {
+  padding-left: 70px;
+}
+
+
+#social-media {
+  margin-left: auto;
+  margin-right: 120px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+}
