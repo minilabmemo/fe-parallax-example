@@ -9,7 +9,8 @@
     "build": "parcel build index.html --out-dir build  --public-url ./  ",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "test": "jest"
+    "test": "jest",
+    "tsw": "jest --watch"
   },
   "dependencies": {
     "gh-pages": "^5.0.0",
