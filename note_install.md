@@ -6,7 +6,7 @@
 - landing-page-forked to fe-night-sky
 - package -tool  parcel
 - parallax animation 
-
+- node `v18.16.1`
 
   ## 啟動
 

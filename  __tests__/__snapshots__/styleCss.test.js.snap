@@ -4,6 +4,7 @@ exports[`測試 style.css 快照 1`] = `
 "@charset \\"UTF-8\\";
 @import './partials/base/_normalize.css';
 @import './partials/base/_animate.css';
+
 body {
   font-family: \\"Apple LiGothic\\", \\"Ubuntu\\", sans-serif;
   background: #026EB6;
@@ -62,19 +63,23 @@ nav {
   margin-left: auto;
   font-size: 20px;
 }
+
 .m-nav a {
   padding: 9px 20px 9px 20px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-decoration: none;
 }
+
 .m-nav a:visited {
   color: #026EB6;
 }
+
 .m-nav a:hover {
   background-color: #026EB6;
   color: white;
   border-radius: 20px;
 }
+
 .m-nav .contact-button {
   text-shadow: none;
   color: #026EB6;
@@ -101,8 +106,8 @@ nav {
 }
 
 .fe-img-animate {
-  width: 584px;
-  height: 584px;
+  width: min(584px, 40vw);
+  height: min(584px, 40vw);
   position: absolute;
   bottom: 0;
   right: 0;
@@ -270,6 +275,7 @@ main {
 .card__photo {
   padding-right: 20px;
 }
+
 .card__photo img {
   border-radius: 10px;
 }
@@ -321,5 +327,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   width: 15%;
-}/*# sourceMappingURL=style.css.map */"
+}
+
+/*# sourceMappingURL=style.css.map */"
 `;
